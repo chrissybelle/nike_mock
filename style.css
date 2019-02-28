@@ -1,0 +1,61 @@
+.womensShoes {
+
+}
+.division-header {
+    font-family: Oswald;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.result-count {
+    color: #999999;
+}
+.division-desc {
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 12px;
+    color: #777777;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.results {
+    display: flex;
+    flex-direction: row;
+}
+.shoes-card {
+  width: 230px;
+  padding: 10px;
+}
+.shoes-card:hover {
+    border: 1px solid #cccccc;
+}
+.img-div {
+    overflow: hidden;
+}
+.shoe-img {
+    height: 215px;
+}
+p {
+    font-family: Arial;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.text-colors, .text-name {
+    font-weight: bold;
+}
+.product-info {
+    padding: 5px 0;
+}
+.color-div {
+    padding-bottom: 3px;
+    padding-top: 10px;
+    border-bottom: 1px solid #999999;
+}
+.text-colors {
+   
+}
+
+.text-desc, .text-price {
+    color: #777777;
+}
