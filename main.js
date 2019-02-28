@@ -1,6 +1,8 @@
-const source = document.getElementById("shoe-template").innerHTML;
+//hidden after pre-compiling
+// const source = document.getElementById("shoe-template").innerHTML;
+// const template = Handlebars.compile(source);
 
-const template = Handlebars.compile(source);
+const template = Handlebars.templates['womens'];
 
 Handlebars.registerHelper("colors", function(number, options) {
     console.log(number);

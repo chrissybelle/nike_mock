@@ -9,43 +9,44 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
-    <script type="text/javascript" src="main.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
-    <script id="shoe-template" type="text/x-handlebars-template">
 
-        <div class="womensShoes">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="womens.js"></script>
+    <script src="main.js" async></script>
+
+        <!-- <div class="womensShoes">
             <h1 class="division-header">WOMEN'S SNEAKERS & SHOES <span class="result-count">({{women.length}})</span></h1>
             <h6 class="division-desc">From spin to yoga to everyday wear, shop women's sneakers featuring signature Nike styles
                 and footwear technologies. Whether it be the iconic Air Force 1 or latest VaporMax, find the pairs that align
                 with your unique style.</h6>
         
-        <div class="results">
-                {{#each women}}
-                <div class="shoes-card">
-                    <div class="img-div">
-                        <img class="shoe-img" src={{this.imgsrc}}>
+            <div class="results">
+                    {{#each women}}
+                    <div class="shoes-card">
+                        <div class="img-div">
+                            <img class="shoe-img" src={{this.imgsrc}}>
+                        </div>
+                        <div class="color-div">
+                            <p class="text-colors">{{this.noOfColors}}
+                                {{#colors this.noOfColors}}
+                                    Colors
+                                    {{else}}
+                                    Color
+                                {{/colors}}
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="text-name">{{this.shoeName}}</p>
+                            <p class="text-desc">{{this.shoeDesc}}</p>
+                            <p class="text-price">{{this.price}}</p>
+                        </div>
                     </div>
-                    <div class="color-div">
-                        <p class="text-colors">{{this.noOfColors}}
-                            {{#colors this.noOfColors}}
-                                Colors
-                                {{else}}
-                                Color
-                            {{/colors}}
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="text-name">{{this.shoeName}}</p>
-                        <p class="text-desc">{{this.shoeDesc}}</p>
-                        <p class="text-price">{{this.price}}</p>
-                    </div>
-                </div>
-            {{/each}}
-        </div>
+                {{/each}}
+            </div>
 
-        </div>
+        </div> -->
 
-    </script>
+    <!-- </script> -->
 
 </head>
 
