@@ -34,7 +34,7 @@ const context = {
         },
         {
             imgsrc: "resources/images/3-1.jpeg",
-            noOfColors: "1",
+            noOfColors: "2",
             shoeName: "Nike Air Max 97",
             shoeDesc: "Women's Shoe",
             price: "$160",
