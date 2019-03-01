@@ -8,7 +8,7 @@
     <title>Women's Sneakers & Shoes. Nike.com</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
     <script src="womens.js"></script>
     <script src="main.js" async></script>
@@ -33,6 +33,31 @@
         {{/each}}
     </script>
 
+    <script id="side-nav-template" type="text/x-handlebars-template">
+        <div class="side-nav">
+            <ul class="cat-list">
+                {{#each categories}}
+                <li class="list-item">
+                    {{#if this.active}}
+                        <a class="active side-link" href={{{this.linkHref}}}>{{this.category}}</a>
+                        <ul class="sub-list">
+                            {{#each this.subcategories}}
+                            <li class="sub-item">
+                                <a class="sub-link side-link" href={{subLinkHref}}>{{this}}</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+
+
+                    {{else}}
+                        <a class="side-link" href={{{linkHref}}}>{{this.category}}</a>
+                    {{/if}}
+
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </script>
 
 </head>
 
@@ -40,7 +65,9 @@
 
     <div id="top-nav"></div>
     <div class="main-content">
-        <div id="left-nav"></div>
+        <div id="left-nav">
+            <h1 class="division-header side-nav-header">Women's</h1>
+        </div>
         <div id="womensShoes"></div>
     </div>
 

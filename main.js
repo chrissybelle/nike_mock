@@ -115,3 +115,104 @@ const navContextData = templateNav({
     });
 
 document.getElementById("top-nav").innerHTML += navContextData;
+
+//sideNav
+const sideNav = document.getElementById("side-nav-template").innerHTML;
+const templateSideNav = Handlebars.compile(sideNav);
+
+const sideNavContextData = templateSideNav({
+    categories: [
+        {
+            category: "Shoes",
+            active: true,
+            subcategories: ["Lifestyle", "Running", "Basketball", "Football", "Soccer", "Training & Gym", "+ More"],
+            linkHref: ""
+        },
+        {
+            category: "Sports Bras",
+            active: false,
+            subcategories: ["Light Support", "Medium Support", "High Support"],
+            linkHref: ""
+        },
+        {
+            category: "Bodysuits",
+            active: false,
+            subcategories: [],
+            linkHref: ""
+        },
+        {
+            category: "Compression & Nike Pro",
+            active: false,
+            subcategories: ["Tops", "Bottoms"],
+            linkHref: ""
+        },
+        {
+            category: "Tops & T-Shirts",
+            active: false,
+            subcategories: ["Graphic T-Shirts", "Compression & Nike Pro", "Long Sleeve", "Short Sleeve", "Sleeveless & Tank Tops", "Polos", "Jerseys", "Button-downs & Flannels"],
+            linkHref: ""
+        },
+        {
+            category: "Hoodies & Pullovers",
+            active: false,
+            subcategories: ["Hoodies", "Pullovers", "Sweaters"],
+            linkHref: ""
+        },
+        {
+            category: "Jackets & Vests",
+            active: false,
+            subcategories: ["Bombers","Other", "Parkas"],
+            linkHref: ""
+        },
+        {
+            category: "Pants & Tights",
+            active: false,
+            subcategories: ["Tights & Leggings","Base Layers & Nike Pro", "Joggers & Sweatpants", "Pants"],
+            linkHref: ""
+        },
+        {
+            category: "Tracksuits",
+            active: false,
+            subcategories: ["Tracksuit Tops", "Tracksuit Bottoms","Tracksuit Sets"],
+            linkHref: ""
+        },
+        {
+            category: "Shorts",
+            active: false,
+            subcategories: [],
+            linkHref: ""
+        },
+        {
+            category: "Jumpsuits & Rompers",
+            active: false,
+            subcategories: [],
+            linkHref: ""
+        },
+        {
+            category: "Skirts & Dresses",
+            active: false,
+            subcategories: [],
+            linkHref: ""
+        },
+        {
+            category: "Surf & Swimwear",
+            active: false,
+            subcategories: ["Board Shorts", "Compression", "Rashguards & Surf Shirts"],
+            linkHref: ""
+        },
+        {
+            category: "Socks",
+            active: false,
+            subcategories: [],
+            linkHref: ""
+        },
+        {
+            category: "Accessories & Equipment",
+            active: false,
+            subcategories: ["Bags & Backpacks", "Balls", "Belts"],
+            linkHref: ""
+        }
+    ]
+});
+
+document.getElementById("left-nav").innerHTML += sideNavContextData;
