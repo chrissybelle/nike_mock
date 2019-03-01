@@ -17,60 +17,68 @@ Handlebars.registerHelper("colors", function(number, options) {
 const context = {
     women: [
         {
-            imgsrc: "resources/images/6.jpeg",
+            imgsrc: "resources/images/1-1.jpeg",
             noOfColors: "3",
             shoeName: "Nike Air Huarache City Move",
             shoeDesc: "Women's Shoe",
-            price: "$90"
+            price: "$90",
+            colorImgs: ["resources/images/1-1.jpeg"]
         },
         {
-            imgsrc: "resources/images/1.jpeg",
+            imgsrc: "resources/images/2-1.jpeg",
             noOfColors: "6",
             shoeName: "Nike Air Max 270",
             shoeDesc: "Women's Shoe",
-            price: "$150"
+            price: "$150",
+            colorImgs: ["resources/images/2-1.jpeg", "resources/images/2-2.jpeg", "resources/images/2-3.jpeg", "resources/images/2-4.jpeg", "resources/images/2-5.jpeg"]
         },
         {
-            imgsrc: "resources/images/2.jpeg",
+            imgsrc: "resources/images/3-1.jpeg",
             noOfColors: "1",
             shoeName: "Nike Air Max 97",
             shoeDesc: "Women's Shoe",
-            price: "$160"
+            price: "$160",
+            colorImgs: ["resources/images/3-1.jpeg"]
         },
         {
-            imgsrc: "resources/images/5.jpeg",
+            imgsrc: "resources/images/4-1.jpeg",
             noOfColors: "3",
             shoeName: "Nike Air Force Max",
             shoeDesc: "Basketball Shoe",
-            price: "$160"
+            price: "$160",
+            colorImgs: ["resources/images/4-1.jpeg"]
         },
         {
-            imgsrc: "resources/images/7.jpeg",
+            imgsrc: "resources/images/5-1.jpeg",
             noOfColors: "4",
             shoeName: "Nike Air Precision II FlyEase",
             shoeDesc: "Women's Basketball Shoe",
-            price: "$70"
+            price: "$70",
+            colorImgs: ["resources/images/5-1.jpeg", "resources/images/5-2.jpeg"]
         },
         {
-            imgsrc: "resources/images/8.jpeg",
+            imgsrc: "resources/images/6-1.jpeg",
             noOfColors: "2",
             shoeName: "Kyrie 5 CNY",
             shoeDesc: "Basketball Shoe",
-            price: "$130"
+            price: "$130",
+            colorImgs: ["resources/images/6-1.jpeg"]
         },
         {
-            imgsrc: "resources/images/9.jpeg",
+            imgsrc: "resources/images/7-1.jpeg",
             noOfColors: "1",
             shoeName: "Nike Air More Money",
             shoeDesc: "Women's Shoe",
-            price: "$143.97"
+            price: "$143.97",
+            colorImgs: ["resources/images/7-1.jpeg"]
         },
         {
-            imgsrc: "resources/images/10.jpeg",
+            imgsrc: "resources/images/8-1.jpeg",
             noOfColors: "Customize",
             shoeName: "Nike Alpha Huarache Elite Mid Premium By Walker Buehler",
             shoeDesc: "Baseball Cleat",
-            price: "$150"
+            price: "$150",
+            colorImgs: ["resources/images/8-1.jpeg"]
         }
     ]
 };

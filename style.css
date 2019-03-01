@@ -208,7 +208,7 @@ body {
 }
 
 #left-nav {
-    width: 15%;
+    width: 20%;
     padding: 35px;
 }
 .side-nav-header {
@@ -251,9 +251,8 @@ body {
 
 
 
-
 #womensShoes {
-    width: 70%;
+    width: 75%;
     padding-right: 10%;
 }
 .division-header {
@@ -312,7 +311,36 @@ p {
 .text-colors {
    
 }
-
 .text-desc, .text-price {
     color: #777777;
+}
+.hover-colors-div {
+    display: none;
+}
+.shoes-card:hover .hover-colors-div {
+    display: block;
+}
+.shoes-card:hover .text-colors {
+    display:none;
+}
+.hover-colors-div {
+    width: 220px;
+    height: 90px;
+    overflow: auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.color-carousel {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.carousel-img {
+    height: 60px;
+    width: auto;
+    padding: 0 0 10px 0;
+    display: inline-block;
 }
