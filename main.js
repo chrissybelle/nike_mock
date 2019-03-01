@@ -110,8 +110,33 @@ const navContextData = templateNav({
                 img: "<img class='nav-img-link3' src='resources/images/converse.png'>",
                 link: "www.google.com"
             }
+        ],
+        rightNavLinks: [
+            {
+                name: "Join / Log In To NikePlus Account",
+                text: true,
+                img: "",
+                link: ""
+            },
+            {
+                name: "Help",
+                text: true,
+                img: "",
+                link: ""
+            },
+            {
+                name: "Cart",
+                text: false,
+                img: "<i class='material-icons md-18 cart-icon'>shopping_cart</i>",
+                link: ""
+            },
+            {
+                name: "Country",
+                text: false,
+                img: "<img class='country-icon' src='resources/images/usa.png'>",
+                link: ""
+            }
         ]
-
     });
 
 document.getElementById("top-nav").innerHTML += navContextData;
@@ -135,7 +160,7 @@ const subNavContextData = templateSubNav({
             src: ""
         },
         {
-            name: "Nike by you",
+            name: "Customize",
             src: ""
         }
     ]
