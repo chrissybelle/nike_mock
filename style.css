@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
 }
+.navs {
+    display: flex;
+    flex-direction: column;
+}
 #top-nav {
     display: flex;
     flex-direction: row;
@@ -46,6 +50,41 @@ body {
     height: 8px;
 }
 
+
+
+
+.sub-nav {
+    display: flex;
+    flex-direction: column;
+    font-family: Oswald;
+    font-weight: 500;
+    padding: 20px;
+    border-bottom: 0.7px solid #e0e0e0;
+}
+.logo {
+    height: 60px;
+    width: auto;
+    padding-left: 38px;
+}
+.sub-nav-list {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sub-nav-item {
+    text-transform: uppercase;
+    padding: 10px 15px;
+    
+    list-style-type: none;  
+    display: inline;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0.5px;
+}
+.sub-nav-link {
+    text-decoration: none;
+    color: #333333;
+}
 
 
 
@@ -106,6 +145,7 @@ body {
 }
 .division-header {
     font-family: Oswald;
+    font-weight: 400;
     font-size: 21px;
     text-transform: uppercase;
 }

@@ -116,6 +116,37 @@ const navContextData = templateNav({
 
 document.getElementById("top-nav").innerHTML += navContextData;
 
+//sub-nav
+const subNav = document.getElementById("sub-nav-template").innerHTML;
+const templateSubNav = Handlebars.compile(subNav);
+
+const subNavContextData = templateSubNav({
+    subNavLinks: [
+        {
+            name: "Men",
+            src: ""
+        },
+        {
+            name: "Women",
+            src: ""
+        },
+        {
+            name: "Kids",
+            src: ""
+        },
+        {
+            name: "Nike by you",
+            src: ""
+        }
+    ]
+});
+
+document.getElementById("sub-nav").innerHTML += subNavContextData;
+
+
+
+
+
 //sideNav
 const sideNav = document.getElementById("side-nav-template").innerHTML;
 const templateSideNav = Handlebars.compile(sideNav);
@@ -216,3 +247,4 @@ const sideNavContextData = templateSideNav({
 });
 
 document.getElementById("left-nav").innerHTML += sideNavContextData;
+

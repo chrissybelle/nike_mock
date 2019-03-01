@@ -8,7 +8,7 @@
     <title>Women's Sneakers & Shoes. Nike.com</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500|Source+Sans+Pro" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
     <script src="womens.js"></script>
     <script src="main.js" async></script>
@@ -17,20 +17,30 @@
         {{#each link}}
             <div class="top-link">
                 <div class="link-container">
-                        <a class="link" href={{this.link}}>
-                                {{#if this.text}}
-                                    {{this.name}}
-                                {{else}}
-                                    <div class="link-image">
-                                        {{{this.img}}}
-                                    </div>
-                                {{/if}}
-                            </a>
+                    <a class="link" href={{this.link}}>
+                        {{#if this.text}}
+                            {{this.name}}
+                        {{else}}
+                            <div class="link-image">
+                                {{{this.img}}}
+                            </div>
+                        {{/if}}
+                    </a>
                 </div>
             </div>
-
-
         {{/each}}
+    </script>
+
+    <script id="sub-nav-template" type="text/x-handlebars-template">
+        <div class="sub-nav">
+            <ul class="sub-nav-list">
+                {{#each subNavLinks}}
+                    <li class="sub-nav-item">
+                        <a class="sub-nav-link" href={{this.src}}>{{this.name}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
     </script>
 
     <script id="side-nav-template" type="text/x-handlebars-template">
@@ -47,12 +57,9 @@
                             </li>
                             {{/each}}
                         </ul>
-
-
                     {{else}}
                         <a class="side-link" href={{{linkHref}}}>{{this.category}}</a>
                     {{/if}}
-
                 </li>
                 {{/each}}
             </ul>
@@ -63,7 +70,11 @@
 
 <body>
 
-    <div id="top-nav"></div>
+    <div class="navs">
+        <div id="top-nav"></div>
+        <div id="sub-nav"><img class="logo" src="resources/images/swoosh.png"></div>
+    </div>
+
     <div class="main-content">
         <div id="left-nav">
             <h1 class="division-header side-nav-header">Women's</h1>
